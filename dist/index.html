@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f7f0"><meta name="description" content="오늘의 작은 행운과 나를 위한 이야기. 잠깐 들러 마음 쉬어가는 곳, 마음편.">
+  <title>마음편 — 오늘도 내 마음 편</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="mobile.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home" aria-label="마음편 홈"><span class="brand-mark">✿</span> 마음편<span class="brand-dot">.</span></a>
+    <p class="brand-caption">오늘도, 내 마음 편.</p>
+    <nav aria-label="주 메뉴">
+      <a href="#home" data-nav="home"><span>⌂</span> 오늘의 마음편</a>
+      <a href="#stories" data-nav="stories"><span>✧</span> 궁금한 이야기</a>
+      <a href="#letters" data-nav="letters"><span>♡</span> 기다리는 마음에게</a>
+      <a href="#saved" data-nav="saved"><span>▱</span> 내 작은 서랍 <b id="save-count">0</b></a>
+    </nav>
+    <div class="sidebar-note"><span>✳</span><p>조금 느린 날도<br>괜찮은 날이니까.</p><small>TAKE YOUR OWN TIME</small></div>
+    <button class="about-button" data-action="about">마음편은 어떤 곳인가요? ↗</button>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><a href="#home" class="mobile-brand">✿ 마음편.</a><span class="topbar-label">A LITTLE LUCK, JUST FOR YOU</span><div class="topbar-right"><span class="preview-tag">첫 번째 시안</span><button class="profile" data-action="profile" aria-label="내 이름 설정">나</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><a class="footer-brand" href="#home">마음편.</a><span>나를 위한 작은 해석, 오늘을 위한 작은 여유.</span><button data-action="about">이용 안내</button><small>© 2026 MAEUMPYEON · 콘텐츠 체험 버전</small></footer>
+  </div>
+  <nav class="mobile-nav" aria-label="모바일 메뉴"><a href="#home" data-nav="home"><span>⌂</span>오늘</a><a href="#stories" data-nav="stories"><span>✧</span>이야기</a><a href="#letters" data-nav="letters"><span>♡</span>마음편지</a><a href="#saved" data-nav="saved"><span>▱</span>내 서랍</a></nav>
+  <dialog id="dialog"><button class="close-dialog" aria-label="닫기">×</button><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
